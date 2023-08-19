@@ -1,1 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smivv</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: yellow;
+        }
+
+        .barra {
+            width: 1600px;
+            height: 80px;
+            background-color: black;
+            margin-top: -1%;
+        }
+
+        img {
+            border-radius: 15px;
+            box-shadow: 0 0 3em silver;
+            position: absolute;
+            margin-left: 15%;
+            margin-top: 0.6%;
+        }
+        h1{
+            margin-top: 1.5%;
+            margin-left: 20%;
+            color: yellow;
+            position: absolute;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        h2 {
+            margin-top: 2%;
+            margin-left: 40%;
+            color: yellow;
+            position: absolute;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .pedido{
+            /*width: 20px;
+            height: 20px;*/
+            border: none;
+            position: absolute;
+            margin-top: 10%;
+            margin-left: 20%;
+        }
+        
+        .para{
+            margin-left:20%;
+            margin-top:17%;
+        }
+        .pacote{
+            border:none;
+            margin-top:-9.4%;
+            margin-left:50%;
+            position:absolute;
+        }
+        .ali{
+            margin-top: -2.7%;
+            margin-left: 48%;
+            position: absolute;
+        }
+        .entreg{
+            position: absolute;
+            margin-left:75% ;
+            margin-top:-9.4%;
+        }
+        .entre{
+        position:absolute;
+        margin-top:-3%;
+        margin-left:74%;
+        }
+        nav.menu-lateral{
+            width: 100px;
+            height: 100%;
+            background-color: black;
+            padding: 40px 0px 40px 1%;
+            box-shadow: 3px 0 0 black;
+           
+            position: fixed;
+            top:0;
+            left: 0;
+            overflow: hidden;
+            transition: .3s;
+        }
+        nav.menu-lateral:hover{
+            width: 300px;
+        }
+        .btn-expandir{
+            width: 100%;
+            padding-left:10px ;
+        }
+        .btn-expandir>i{
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        ul{
+            height: 100%;
+            list-style-type: none;
+        }
+        ul li.item-menu{
+            transition: .2s;
+        }
+        ul li.item-menu:hover{
+            background: yellow;
+        }
+        ul li.item-menu a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 20px 4%;
+            display: flex;
+            line-height: 40px;
+        }
+        ul li.item-menu a .txt-link{
+            margin-left: 40px;
+        }
+        ul li.item-menu a .icon>i{
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="barra"><img src="img/logotipo.png" alt="" width="60px" height="60px">
+        <h1>SMIVV</h1>
+        <h2>Seu site de veículos!</h2>
+    </div>
+    <a href="pedido.html" class="pedido"><img src="img/carro.png" alt="" width="80px" height="80px"></a>
+    <p class="para">Pedir Veículo</p>
+    <nav class="menu-lateral">
+        <div class="btn-expandir">
+            <i class="bi bi-list"></i>
+        </div>
+        <ul>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-house"></i></span>
+                    <span class="txt-link">Início</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-credit-card"></i></span>
+                    <span class="txt-link">Carteira</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-person-circle"></i></span>
+                    <span class="txt-link">Conta</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <a href="" class="pacote"><img src="img/pacote.png" alt="" width="80px" height="80px"></a>
+    <p class="ali">Entrega de Alimento</p>
+    <a href="entrega.html" class="entreg"><img src="img/entrega.png" alt="" width="80px" height="80px"></a>
+    <p class="entre">Entrega de Pacotes</p>
+</body>
+
+</html>
