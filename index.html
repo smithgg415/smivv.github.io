@@ -9,11 +9,12 @@
     <style>
         body {
             background-color: yellow;
+            height: 200vh;
         }
 
         .barra {
             width: 1600px;
-            height: 80px;
+            height: 120px;
             background-color: black;
             margin-top: -1%;
         }
@@ -25,13 +26,16 @@
             margin-left: 15%;
             margin-top: 0.6%;
         }
-        h1{
+
+        h1 {
             margin-top: 1.5%;
-            margin-left: 20%;
+            margin-left: 22%;
             color: yellow;
             position: absolute;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            border: 2px double yellow;
         }
+
         h2 {
             margin-top: 2%;
             margin-left: 40%;
@@ -39,76 +43,101 @@
             position: absolute;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-        .pedido{
+
+        h3 {
+            color: yellow;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: 25%;
+            margin-top: 6.7%;
+            position: absolute;
+        }
+
+        .pedido {
             /*width: 20px;
             height: 20px;*/
             border: none;
             position: absolute;
             margin-top: 10%;
-            margin-left: 20%;
+            margin-left: 25%;
         }
-        
-        .para{
-            margin-left:20%;
-            margin-top:17%;
+
+        .para {
+            margin-left: 26%;
+            margin-top: 22%;
+            position: absolute;
+            font-size: 20px;
         }
-        .pacote{
-            border:none;
-            margin-top:-9.4%;
-            margin-left:50%;
-            position:absolute;
-        }
-        .ali{
-            margin-top: -2.7%;
-            margin-left: 48%;
+
+        .pacote {
+            border: none;
+            margin-top: 10%;
+            margin-left: 50%;
             position: absolute;
         }
-        .entreg{
+
+        .ali {
+            margin-top: 22%;
+            margin-left: 48.5%;
             position: absolute;
-            margin-left:75% ;
-            margin-top:-9.4%;
+            font-size: 20px;
         }
-        .entre{
-        position:absolute;
-        margin-top:-3%;
-        margin-left:74%;
+
+        .entreg {
+            position: absolute;
+            margin-left: 75%;
+            margin-top: 10%;
         }
-        nav.menu-lateral{
+
+        .entre {
+            position: absolute;
+            margin-top: 22%;
+            margin-left: 74%;
+            font-size: 20px;
+        }
+
+        nav.menu-lateral {
             width: 100px;
             height: 100%;
             background-color: black;
             padding: 40px 0px 40px 1%;
-            box-shadow: 3px 0 0 black;
-           
+            box-shadow: 3px 0 0 white;
+
             position: fixed;
-            top:0;
+            top: 0;
             left: 0;
             overflow: hidden;
             transition: .3s;
         }
-        nav.menu-lateral:hover{
+
+        nav.menu-lateral:hover {
             width: 300px;
         }
-        .btn-expandir{
+
+        .btn-expandir {
             width: 100%;
-            padding-left:10px ;
+            padding-left: 42px;
         }
-        .btn-expandir>i{
+
+        .btn-expandir>i {
             color: white;
-            font-size: 24px;
+            font-size: 30px;
             cursor: pointer;
         }
-        ul{
+
+        ul {
             height: 100%;
             list-style-type: none;
         }
-        ul li.item-menu{
+
+        ul li.item-menu {
             transition: .2s;
         }
-        ul li.item-menu:hover{
+
+        ul li.item-menu:hover {
             background: yellow;
         }
-        ul li.item-menu a{
+
+        ul li.item-menu a {
             color: white;
             text-decoration: none;
             font-size: 20px;
@@ -116,29 +145,114 @@
             display: flex;
             line-height: 40px;
         }
-        ul li.item-menu a .txt-link{
+
+        ul li.item-menu a .txt-link {
             margin-left: 40px;
         }
-        ul li.item-menu a .icon>i{
+
+        ul li.item-menu a .icon>i {
             font-size: 30px;
+        }
+
+        .para,
+        .ali,
+        .entre {
+            background-color: black;
+            color: yellow;
+            padding: 5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 7px;
+        }
+
+        .pedido,
+        .pacote,
+        .entreg {
+            box-shadow: 0 0 3em white;
+        }
+
+        .cor>i {
+            color: white;
+            font-size: 80px;
+        }
+
+        .cor {
+            position: absolute;
+            margin-left: 84%;
+            margin-top: 2%;
+        }
+
+        .cor>i:hover {
+            color: yellow;
+            transition: 2s;
+        }
+
+        .hist {
+            background-color: white;
+            width: 600px;
+            height: 150px;
+            border-radius: 8px;
+            position: absolute;
+            margin-left: 30%;
+            margin-top: 70%;
+            border: 2px solid;
+        }
+
+        .text {
+            position: absolute;
+            margin-left: 1%;
+        }
+
+        .titulo {
+            position: absolute;
+            color: black;
+            margin-top: 66%;
+            margin-left: 30%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+
+        .te {
+            position: absolute;
+            margin-top: 15%;
+        }
+
+        .pass {
+            position: absolute;
+            margin-top: 35%;
+            margin-left: 30%;
+            border: 2px solid black;
+        }
+
+        .leg {
+            position: absolute;
+            font-size: 20px;
+            margin-left: 26%;
+            margin-top: 51%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
     </style>
 </head>
 
 <body>
-    <div class="barra"><img src="img/logotipo.png" alt="" width="60px" height="60px">
-        <h1>SMIVV</h1>
-        <h2>Seu site de veículos!</h2>
-    </div>
-    <a href="pedido.html" class="pedido"><img src="img/carro.png" alt="" width="80px" height="80px"></a>
-    <p class="para">Pedir Veículo</p>
+    <a name="inicio">
+        <div class="barra"><img src="" alt="" width="60px" height="60px">
+            <h1>SMIVV</h1>
+            <h2>Seu site de veículos!</h2>
+            <h3>"Smivv: Navegando Conexões, Uma Viagem de Cada Vez"</h3>
+            <div class="cor"><i class="bi bi-car-front"></i></div>
+        </div>
+    </a>
+    <a href="pedido.html" class="pedido"><img src="" alt=""
+            width="150px" height="150px"></a>
+    <a href="#">
+        <p class="para">Pedir Veículo</p>
+    </a>
     <nav class="menu-lateral">
         <div class="btn-expandir">
             <i class="bi bi-list"></i>
         </div>
         <ul>
             <li class="item-menu">
-                <a href="#">
+                <a href="#inicio">
                     <span class="icon"><i class="bi bi-house"></i></span>
                     <span class="txt-link">Início</span>
                 </a>
@@ -155,13 +269,37 @@
                     <span class="txt-link">Conta</span>
                 </a>
             </li>
+            <li class="item-menu">
+                <a href="#bio">
+                    <span class="icon"><i class="bi bi-building-fill"></i></span>
+                    <span class="txt-link"><i>Quem Somos?</i></span>
+                </a>
+            </li>
         </ul>
     </nav>
-    
-    <a href="" class="pacote"><img src="img/pacote.png" alt="" width="80px" height="80px"></a>
-    <p class="ali">Entrega de Alimento</p>
-    <a href="entrega.html" class="entreg"><img src="img/entrega.png" alt="" width="80px" height="80px"></a>
-    <p class="entre">Entrega de Pacotes</p>
+
+    <a href="" class="pacote"><img src="" width="150px" height="150px"></a>
+    <a href="">
+        <p class="ali">Entrega de Alimento</p>
+    </a>
+    <a href="entrega.html" class="entreg"><img
+            src="" alt=""
+            width="150px" height="150px"></a>
+    <a href="">
+        <p class="entre">Entrega de Pacotes</p>
+    </a>
+    <!--
+    <div class="hist">
+        <a name="bio">
+            <p class="text">Fundada em 2023 por Luís Felipe Giacomelli Rodrigues, a Smivv surgiu como uma solução
+                inovadora
+                para
+                melhorar o transporte urbano.
+                Seu aplicativo conectava passageiros a motoristas, simplificando viagens e
+                proporcionando transparência. Apesar dos desafios regulatórios, a Smivv cresceu globalmente, reduzindo
+                congestionamentos e promovendo práticas de transporte sustentáveis. Sua história é de inovação,
+                transformação urbana e conexão entre pessoas.</p>
+    </div></a>-->
 </body>
 
 </html>
