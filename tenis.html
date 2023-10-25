@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .total {
+            background-color: lightgreen;
+            border: 2px solid green;
+            width: 500px;
+            height: 700px;
+        }
+
+        .dados-pessoais {
+            position: absolute;
+            left: 70px;
+            top: 55px;
+            padding: 12px;
+            border: 1px solid green;
+        }
+
+        .localizacao {
+            position: absolute;
+            left: 270px;
+            top: 55px;
+            padding: 10px;
+            border: 1px solid green;
+        }
+
+        .faixa-etaria {
+            position: absolute;
+            top: 190px;
+            left: 78px;
+            padding-top: 5px;
+            border: 1px solid green;
+            width: 370px;
+        }
+
+        .idade-direito {
+            padding-top: 5px;
+            position: absolute;
+            left: 200px;
+            top: 0.1px;
+        }
+
+        .esportes {
+            position: absolute;
+            top: 280px;
+            left: 78px;
+            border: 1px solid green;
+            width: 370px;
+            padding-top: 10px;
+        }
+
+        .comentario {
+            position: absolute;
+            top: 450px;
+            left: 78px;
+            border: 1px solid green;
+            padding-top: 20px;
+            padding-right: 70px;
+            padding-left: 5px;
+            padding-bottom: 5px;
+        }
+
+        .final {
+            position: absolute;
+            top: 103%;
+            left: 78px;
+        }
+
+        .dados {
+            position: absolute;
+            top: -26px;
+            background-color: white;
+            color: lightgreen;
+            border: 1px solid green;
+            padding: 1px;
+        }
+
+        .endereco {
+            position: absolute;
+            top: -26px;
+            background-color: white;
+            color: lightgreen;
+            border: 1px solid green;
+            padding: 1px;
+        }
+
+        .idade {
+            position: absolute;
+            top: -30px;
+            left: 10px;
+            background-color: white;
+            color: lightgreen;
+            border: 1px solid green;
+            padding: 1px;
+        }
+
+        .esportes-praticantes {
+            position: absolute;
+            top: -26px;
+            left: 10px;
+            background-color: white;
+            color: lightgreen;
+            border: 1px solid green;
+            padding: 1px;
+        }
+
+        .coment {
+            position: absolute;
+            top: -26px;
+            background-color: white;
+            color: lightgreen;
+            border: 1px solid green;
+            padding: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="total">
+        <div class="dados-pessoais">
+            <p class="dados">Dados pessoais</p>
+            <form action="#">
+                <label for="nome">Nome completo:</label>
+                <br>
+                <input type="text">
+                <br>
+                <label for="profissao">Profissão:</label>
+                <br>
+                <select name="" id="">
+                    <option selected>Empresário</option>
+                    <option selected>Bombeiro</option>
+                    <option selected>Sua profissão</option>
+                </select>
+        </div>
+        <div class="localizacao">
+            <p class="endereco">Localização</p>
+            <label for="email">E-mail:</label>
+            <br>
+            <input type="email" name="" id="">
+            <br>
+            <label for="address">Endereço:</label>
+            <br>
+            <input type="text">
+        </div>
+        <div class="faixa-etaria">
+            <p class="idade">Faixa etária</p>
+            <input type="radio" name="" id="">até 20 anos
+            <br>
+            <input type="radio" name="" id="">mais de 20 até 30 anos
+            <br>
+            <input type="radio" name="" id="">mais de 30 até 30 anos
+            <div class="idade-direito">
+                <input type="radio" name="" id="">mais de 40 até 50 anos
+                <br>
+                <input type="radio" name="" id="">mais de 50 até 60 anos
+                <br>
+                <input type="radio" name="" id="">mais de 60
+            </div>
+        </div>
+        <div class="esportes">
+            <p class="esportes-praticantes">Esportes que pratica</p>
+            <input type="checkbox" name="" id="">Futebol de campo
+            <br>
+            <input type="checkbox" name="" id="">Futebol de salão
+            <br>
+            <input type="checkbox" name="" id="">Futebol society
+            <br>
+            <input type="checkbox" name="" id="">Volley de quadra
+            <br>
+            <input type="checkbox" name="" id="">Volley de praia
+            <br>
+            <input type="checkbox" name="" id="">Natação em piscina
+            <br>
+            <input type="checkbox" name="" id="">Natação em mar aberto
+        </div>
+        <div class="comentario">
+            <p class="coment">Comentário</p>
+            <label for="msg">Mensagem:</label>
+            <br>
+            <textarea name="" id="" cols="35" rows="10"></textarea>
+        </div>
+        <div class="final">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+        </form>
+    </div>
+</body>
+
+</html>
