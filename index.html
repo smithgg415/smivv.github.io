@@ -62,10 +62,19 @@
             text-align: justify;
             overflow: auto;
             height: 120px;
+            color: black;
         }
-        .item:hover{
-            transform:scale(1.2);
-            transition:2s;
+
+        .item:hover {
+            /*(transform:scale(1.2);*/
+            border: 3px solid #64A;
+            /*padding-top:10px;*/
+            border-radius: 25px;
+            transition: 0.8s;
+        }
+
+        img {
+            border-radius: 25px;
         }
     </style>
 </head>
@@ -73,9 +82,8 @@
 <body>
     <!-- Header -->
     <header>
-        <h1>DesenvolveMais</h1>
+        <h1><i class="bi bi-tiktok"> </i>Desenvolve Mais</h1>
     </header>
-
     <!-- Conteúdo -->
     <main>
         <div class="container">
@@ -83,19 +91,25 @@
                 <div class="col-lg-6 offset-lg-3">
                     <div class="feature">
                         <i class="bi bi-code"></i>
-                        <p>Desenvolvimento Web</p>
+                        <p>Cursos de Desenvolvimento Web</p>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-around">
-                <div class="item col-md-4"><img src="https://static-media.hotmart.com/KVI3aZ_qoyFJEs8sKw6Od0cxnng=/filters:background_color(white)/hotmart/product_pictures/9c3ae3e8-eed8-4c5a-8cdf-88f09ee64d62/IMG20230219WA0021.jpg" width="200px">
+                <div class="item col-md-4"><img
+                        src="https://static-media.hotmart.com/KVI3aZ_qoyFJEs8sKw6Od0cxnng=/filters:background_color(white)/hotmart/product_pictures/9c3ae3e8-eed8-4c5a-8cdf-88f09ee64d62/IMG20230219WA0021.jpg"
+                        width="200px">
                     <h4>Desenvolvimento Web<br>FullStack com PHP</h4>
                     <p id="descricao">Com este curso de programação, você aprenderá desde os conceitos básicos da
                         linguagem até as ferramentas mais avançadas para criação de projetos web completos. Serão
                         abordados temas como manipulação de bancos de dados, integração com outras tecnologias, criação
                         de APIs, middlewares, requisições, respostas, rotas, segurança e muito mais!</p>
+                    <a href="#"><button class="btn bg-primary text-light mb-5">Entrar</button></a>
+
                 </div>
-                <div class="item col-md-4"><img src="https://static-media.hotmart.com/MfbDAQgGExqLDsabFtiHz4N_Fls=/filters:background_color(white)/hotmart/product_pictures/aa823b9c-8546-4deb-b8d7-892b7ac3f8be/Semtitulo.jpg" width="300px">
+                <div class="item col-md-4 text-center"><img
+                        src="https://static-media.hotmart.com/MfbDAQgGExqLDsabFtiHz4N_Fls=/filters:background_color(white)/hotmart/product_pictures/aa823b9c-8546-4deb-b8d7-892b7ac3f8be/Semtitulo.jpg"
+                        width="300px">
                     <h4>Desenvolvimento Web<br>Front-End completo</h4>
                     <p id="descricao">O Front-end está muito relacionado com a interface gráfica do projeto. Ou seja, é
                         onde se desenvolve a aplicação com a qual o usuário irá interagir diretamente, seja em
@@ -103,14 +117,18 @@
                         Se um site ou sistema de gestão não é simples de entender ou não possui fácil usabilidade, então
                         a aderência do usuário será menor. O papel do desenvolvimento front-end é facilitar a
                         usabilidade e garantir que a ferramenta realmente funcione conforme o esperado.</p>
+                    <a href="#"><button class="btn bg-primary text-light mb-5">Entrar</button></a>
                 </div>
-                <div class="item col-md-4"><img src="https://static-media.hotmart.com/PqipBpmZ0T5tMo0rfI5mMnTK5_g=/filters:background_color(white)/hotmart/product_pictures/e58866f6-cca0-4c64-ad4e-6249f38172ed/capaJavaScript.jpeg" width="200px">
+                <div class="item col-md-4"><img
+                        src="https://static-media.hotmart.com/PqipBpmZ0T5tMo0rfI5mMnTK5_g=/filters:background_color(white)/hotmart/product_pictures/e58866f6-cca0-4c64-ad4e-6249f38172ed/capaJavaScript.jpeg"
+                        width="200px">
                     <h4>Desevolvimento Web<br>HTML 5, CSS 3 e JavaScript</h4>
                     <p id="descricao">Neste curso completo será mostrado como o desenvolvimento de sites acontece de
                         verdade no mercado de trabalho.
 
                         Vamos abordar aqui do ZERO tudo o que você estudante ou iniciante precisa para de fato
                         desenvolver as suas primeiras aplicações Web totalmente responsiva e dinâmica.</p>
+                    <a href="#"><button class="btn bg-primary text-light mb-5">Entrar</button></a>
                 </div>
             </div>
         </div>
