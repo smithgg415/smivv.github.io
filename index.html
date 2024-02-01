@@ -89,6 +89,43 @@
             background:linear-gradient(to right, #64A, #41F);
             
         }
+        .popup-container {
+        position: fixed;
+        top: 0;
+        right: -400px; /* Inicia o pop-up fora da tela */
+        width: 400px;
+        height: 70%;
+        background-color: #f8f9fa;
+        z-index: 9999;
+        transition: right 0.3s ease-in-out;
+        border:5px solid black;
+        }
+
+         .popup-content {
+         padding: 20px;
+        }
+
+        .popup-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 999; /* Menor z-index para ficar atrás do menu */
+        }
+
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+    .menuItem:hover{
+        background-color:#007bff;
+        padding:10px;
+        color:white;
+        transition: 1s ease;
+        border-radius:20px;
+        box-shadow:0 0 3em silver;
+    }
     </style>
 </head>
 
@@ -110,7 +147,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-around">
+            <div class="row justify-content-between">
                 <div class="item col-md-4"><img
                         src="https://static-media.hotmart.com/KVI3aZ_qoyFJEs8sKw6Od0cxnng=/filters:background_color(white)/hotmart/product_pictures/9c3ae3e8-eed8-4c5a-8cdf-88f09ee64d62/IMG20230219WA0021.jpg"
                         width="200px">
@@ -148,7 +185,20 @@
             </div>
         </div>
     </main>
+    <div class="popup-container" id="popupContainer">
+    <button type="button" class="close close-btn" aria-label="Close" onclick="togglePopup()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="popup-content text-center">
+        <h3>Quem Somos?</h3>
+        <p style="text-align:justify;">Somos vendedores afiliados do Hotmart, uma plataforma de vendas. Os cursos oferecidos foram escolhidos a dedo por pessoas que entendem do assunto de Desenvolvimento Web.</p>
+        <img src="https://th.bing.com/th/id/R.4832cb21180c4ec04441dc7270b60868?rik=%2bcf%2fYTJHCds1Zg&pid=ImgRaw&r=0" alt="" width="100px">
+       <a href="https://www.tiktok.com/@desenvolvemais?_t=7jWS%KmRusF&_r=1" style="text-decoration:none;"> <div class="menuItem"><i class="bi bi-tiktok"> </i>Acesse o nosso TikTok;</div></a>
+       <i class="bi bi-code text-primary" style="font-size:30px;"> </i><p>Página desenvolvida por Luís Felipe Giacomelli Rodrigues.</p>
+    </div>
+</div>
 
+<button class="btn btn-primary popup-btn" onclick="togglePopup()">Veja Mais</button>
     <!-- Rodapé -->
     <footer class="footer">
         <div class="container">
@@ -161,6 +211,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.1/font/bootstrap-icons.min.js"></script>
+    <script>
+    function togglePopup() {
+        var popup = document.getElementById("popupContainer");
+        if (popup.style.right === "-400px") {
+            popup.style.right = "0";
+        } else {
+            popup.style.right = "-400px";
+        }
+    }
+</script>
 </body>
 
 </html>
