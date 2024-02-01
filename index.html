@@ -106,10 +106,10 @@
         }
 
         .popup-btn {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        z-index: 999; /* Menor z-index para ficar atrás do menu */
+        position: absolute;
+        margin-top:10px;
+        right:10px
+        /*z-index: 999;  Menor z-index para ficar atrás do menu */
         }
 
     .close-btn {
@@ -136,6 +136,20 @@
         <p>"Invista no seu conhecimento, ninguém pode tirá-lo de você."</p>
     </header>
     <div class="subtopo text-center text-light p-3"><h4>Clique em "Entrar" e veja os preços disponíveis!</h4></div>
+    <div class="popup-container" id="popupContainer">
+    <button type="button" class="close close-btn" aria-label="Close" onclick="togglePopup()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="popup-content text-center">
+        <h3>Quem Somos?</h3>
+        <p style="text-align:justify;">Somos vendedores afiliados do Hotmart, uma plataforma de vendas. Os cursos oferecidos foram escolhidos a dedo por pessoas que entendem do assunto de Desenvolvimento Web.</p>
+        <img src="https://th.bing.com/th/id/R.4832cb21180c4ec04441dc7270b60868?rik=%2bcf%2fYTJHCds1Zg&pid=ImgRaw&r=0" alt="" width="100px">
+       <a href="https://www.tiktok.com/@desenvolvemais?_t=7jWS%KmRusF&_r=1" style="text-decoration:none;"> <div class="menuItem"><i class="bi bi-tiktok"> </i>Acesse o nosso TikTok;</div></a>
+       <i class="bi bi-code text-primary" style="font-size:30px;"> </i><p>Página desenvolvida por Luís Felipe Giacomelli Rodrigues.</p>
+    </div>
+</div>
+
+<button class="btn btn-primary popup-btn" onclick="togglePopup()">Veja Mais</button>
     <!-- Conteúdo -->
     <main>
         <div class="container">
@@ -185,20 +199,6 @@
             </div>
         </div>
     </main>
-    <div class="popup-container" id="popupContainer">
-    <button type="button" class="close close-btn" aria-label="Close" onclick="togglePopup()">
-        <span aria-hidden="true">&times;</span>
-    </button>
-    <div class="popup-content text-center">
-        <h3>Quem Somos?</h3>
-        <p style="text-align:justify;">Somos vendedores afiliados do Hotmart, uma plataforma de vendas. Os cursos oferecidos foram escolhidos a dedo por pessoas que entendem do assunto de Desenvolvimento Web.</p>
-        <img src="https://th.bing.com/th/id/R.4832cb21180c4ec04441dc7270b60868?rik=%2bcf%2fYTJHCds1Zg&pid=ImgRaw&r=0" alt="" width="100px">
-       <a href="https://www.tiktok.com/@desenvolvemais?_t=7jWS%KmRusF&_r=1" style="text-decoration:none;"> <div class="menuItem"><i class="bi bi-tiktok"> </i>Acesse o nosso TikTok;</div></a>
-       <i class="bi bi-code text-primary" style="font-size:30px;"> </i><p>Página desenvolvida por Luís Felipe Giacomelli Rodrigues.</p>
-    </div>
-</div>
-
-<button class="btn btn-primary popup-btn" onclick="togglePopup()">Veja Mais</button>
     <!-- Rodapé -->
     <footer class="footer">
         <div class="container">
