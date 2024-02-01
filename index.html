@@ -77,56 +77,61 @@
         img {
             border-radius: 25px;
         }
-        .price{
-            top:-62px;
-            left:-100px;
-            padding:15px;
-            font-size:1px;
-            border-radius:12px;
-            position:relative;
-        }
-        .subtopo{
-            background:linear-gradient(to right, #64A, #41F);
-            
-        }
-        .popup-container {
-        position: fixed;
-        top: 0;
-        right: -400px; /* Inicia o pop-up fora da tela */
-        width: 400px;
-        height: 70%;
-        background-color: #f8f9fa;
-        z-index: 9999;
-        transition: right 0.3s ease-in-out;
-        border:5px solid black;
-        border-radius: 25px;
+
+        .price {
+            top: -62px;
+            left: -100px;
+            padding: 15px;
+            font-size: 1px;
+            border-radius: 12px;
+            position: relative;
         }
 
-         .popup-content {
-         padding: 20px;
+        .subtopo {
+            background: linear-gradient(to right, #64A, #41F);
+
+        }
+
+        .popup-container {
+            position: fixed;
+            top: 0;
+            right: -400px;
+            /* Inicia o pop-up fora da tela */
+            width: 400px;
+            height: 70%;
+            background-color: #f8f9fa;
+            z-index: 9999;
+            transition: right 0.3s ease-in-out;
+            border: 5px solid black;
+            border-radius: 25px;
+        }
+
+        .popup-content {
+            padding: 20px;
         }
 
         .popup-btn {
-        position: absolute;
-        margin-top:10px;
-        right:10px
-        /*z-index: 999;  Menor z-index para ficar atrás do menu */
+            position: absolute;
+            margin-top: 10px;
+            right: 10px
+                /*z-index: 999;  Menor z-index para ficar atrás do menu */
         }
 
-    .close-btn {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-    }
-    .menuItem:hover{
-        background-color:#007bff;
-        padding:10px;
-        color:white;
-        transition: 1s ease;
-        border-radius:20px;
-        box-shadow:0 0 3em silver;
-    }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        .menuItem:hover {
+            background-color: #007bff;
+            padding: 10px;
+            color: white;
+            transition: 1s ease;
+            border-radius: 20px;
+            box-shadow: 0 0 3em silver;
+        }
     </style>
 </head>
 
@@ -136,21 +141,27 @@
         <h1><i class="bi bi-tiktok"> </i>Desenvolve Mais</h1>
         <p>"Invista no seu conhecimento, ninguém pode tirá-lo de você."</p>
     </header>
-    <div class="subtopo text-center text-light p-3"><h4>Clique em "Entrar" e veja os preços disponíveis!</h4></div>
-    <div class="popup-container" id="popupContainer">
-    <button type="button" class="close close-btn" aria-label="Close" onclick="togglePopup()">
-        <span aria-hidden="true">&times;</span>
-    </button>
-    <div class="popup-content text-center">
-        <h3>Quem Somos?</h3>
-        <p style="text-align:justify;">Somos vendedores afiliados de uma plataforma de vendas. Os cursos oferecidos foram escolhidos a dedo por pessoas que entendem do assunto de Desenvolvimento Web.</p>
-        <!--<img src="https://th.bing.com/th/id/R.4832cb21180c4ec04441dc7270b60868?rik=%2bcf%2fYTJHCds1Zg&pid=ImgRaw&r=0" alt="" width="100px">-->
-       <a href="https://www.tiktok.com/@desenvolvemais?_t=7jWS%KmRusF&_r=1" style="text-decoration:none;"> <div class="menuItem"><i class="bi bi-tiktok"> </i>Acesse o nosso TikTok;</div></a>
-       <i class="bi bi-code text-primary" style="font-size:30px;"> </i><p>Página desenvolvida por Luís Felipe Giacomelli Rodrigues.</p>
+    <div class="subtopo text-center text-light p-3">
+        <h4>Clique em "Entrar" e veja os preços disponíveis!</h4>
     </div>
-</div>
+    <div class="popup-container" id="popupContainer">
+        <button type="button" class="close close-btn" aria-label="Close" onclick="togglePopup()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="popup-content text-center">
+            <h3>Quem Somos?</h3>
+            <p style="text-align:justify;">Somos vendedores afiliados de uma plataforma de vendas. Os cursos oferecidos
+                foram escolhidos a dedo por pessoas que entendem do assunto de Desenvolvimento Web.</p>
+            <!--<img src="https://th.bing.com/th/id/R.4832cb21180c4ec04441dc7270b60868?rik=%2bcf%2fYTJHCds1Zg&pid=ImgRaw&r=0" alt="" width="100px">-->
+            <a href="https://www.tiktok.com/@desenvolvemais?_t=7jWS%KmRusF&_r=1" style="text-decoration:none;">
+                <div class="menuItem"><i class="bi bi-tiktok"> </i>Acesse o nosso TikTok;</div>
+            </a>
+            <i class="bi bi-code text-primary" style="font-size:30px;"> </i>
+            <p>Página desenvolvida por Luís Felipe Giacomelli Rodrigues.</p>
+        </div>
+    </div>
 
-<button class="btn bg-primary text-light popup-btn" onclick="togglePopup()">Veja Mais</button>
+    <button class="btn bg-primary text-light popup-btn" onclick="togglePopup()">Veja Mais</button>
     <!-- Conteúdo -->
     <main>
         <div class="container">
@@ -171,7 +182,8 @@
                         linguagem até as ferramentas mais avançadas para criação de projetos web completos. Serão
                         abordados temas como manipulação de bancos de dados, integração com outras tecnologias, criação
                         de APIs, middlewares, requisições, respostas, rotas, segurança e muito mais!</p>
-                    <a href="https://go.hotmart.com/P90514925F?dp=1"><button class="btn bg-primary text-light mb-5">Entrar</button></a>
+                    <a href="https://go.hotmart.com/P90514925F?dp=1"><button
+                            class="btn bg-primary text-light mb-5">Entrar</button></a>
 
                 </div>
                 <div class="item col-md-4 text-center"><img
@@ -184,7 +196,8 @@
                         Se um site ou sistema de gestão não é simples de entender ou não possui fácil usabilidade, então
                         a aderência do usuário será menor. O papel do desenvolvimento front-end é facilitar a
                         usabilidade e garantir que a ferramenta realmente funcione conforme o esperado.</p>
-                    <a href="https://go.hotmart.com/G90515772E?dp=1"><button class="btn bg-primary text-light mb-5">Entrar</button></a>
+                    <a href="https://go.hotmart.com/G90515772E?dp=1"><button
+                            class="btn bg-primary text-light mb-5">Entrar</button></a>
                 </div>
                 <div class="item col-md-4"><img
                         src="https://static-media.hotmart.com/PqipBpmZ0T5tMo0rfI5mMnTK5_g=/filters:background_color(white)/hotmart/product_pictures/e58866f6-cca0-4c64-ad4e-6249f38172ed/capaJavaScript.jpeg"
@@ -195,35 +208,35 @@
 
                         Vamos abordar aqui do ZERO tudo o que você estudante ou iniciante precisa para de fato
                         desenvolver as suas primeiras aplicações Web totalmente responsiva e dinâmica.</p>
-                    <a href="https://go.hotmart.com/T90515966X?dp=1"><button class="btn bg-primary text-light mb-5">Entrar</button></a>
+                    <a href="https://go.hotmart.com/T90515966X?dp=1"><button
+                            class="btn bg-primary text-light mb-5">Entrar</button></a>
                 </div>
             </div>
-            <!--
             <div class="row justify-content-between">
                 <div class="item col-md-4"><img
-                        src="https://static-media.hotmart.com/82RDJZXiSk3VWW2_mJ7yxBA_xoU=/filters:background_color(white)/hotmart/product_pictures/476f4187-d698-4436-b797-36f5e3b40d85/DJW.png"
+                        src="15O" rel="nofollow">
+<img src="https://www.mesavirtual.com/hotmart/250x250-wordpress.png"
                         width="200px">
-                    <h4>Desenvolvimento de Jogos Web</h4>
-                    <p id="descricao">O curso foi projetado para iniciantes e irá ensinar desde os conceitos básicos até tópicos mais avançados, em desenvolvimento de jogos web permitindo que os participantes aprendam a desenvolver jogos web do zero.
-
-Os instrutores do curso fornecerão uma introdução completa ao desenvolvimento de jogos web, abordando desde os fundamentos de programação até o design de jogos e a implementação prática dos mesmos. Você aprenderá a utilizar as linguagens de programação relevantes, como JavaScript, e a trabalhar com tecnologias como HTML5, CSS3 e frameworks populares específicos para jogos web.</p>
-                    <a href="#"><button class="btn bg-primary text-light mb-5">Entrar</button></a>
+                    <h4>WordPress Descomplicado, Aprenda do Zero Com Facilidade</h4>
+                    <p id="descricao">Descubra o poder do WordPress e aprenda a criar seu próprio site do zero com facilidade no curso básico ministrado pelo Analista de Sistemas Marcelo Oliveira. Este curso é perfeito para iniciantes que desejam adentrar o mundo da criação de sites de maneira simples e eficiente. Você será guiado passo a passo na instalação do WordPress, personalização do visual do site e adição de funcionalidades utilizando plugins.</p>
+                    <a href="https://go.hotmart.com/O90534215O?dp=1"><button class="btn bg-primary text-light mb-5">Entrar</button></a>
 
                 </div>
-                <div class="item col-md-4 text-center"><img src=""
-                        width="300px">
-                    <h4></h4>
-                    <p id="descricao"></p>
-                    <a href="#"><button class="btn bg-primary text-light mb-5">Entrar</button></a>
+                <div class="item col-md-4 text-center"><img src="https://static-media.hotmart.com/5KTAJm7WSb5G8C6GFFrUFsast2U=/filters:background_color(white)/hotmart/product_pictures/f8f4494e-1601-4a3d-bd73-e5dcc7968c10/Capturadetela20231124143543.png"
+                        width="200px">
+                    <h4>Como se tornar um Desenvolvedor Back-End</h4>
+                    <p id="descricao">Uma das maiores dificuldades de quem está começando no desenvolvimento é conseguir focar e estudar as coisas certas para entrar no mercado de forma prática e coerente com as ferramentas mais utilizadas.
+Por isso criamos este Ebook, o "Como Se Tornar um Desenvolvedor Back-End" é um guia de estudos que relaciona, explica e mapeia  tudo que você precisa aprender para entrar nesse mundo incrível do Back-End, e o melhor, sem perder tempo com o que não vai agregar na sua carreira!</p>
+                    <a href="https://go.hotmart.com/T90534854D?dp=1"><button class="btn bg-primary text-light mb-5">Entrar</button></a>
                 </div>
                 <div class="item col-md-4"><img
-                        src=""
+                        src="https://static-media.hotmart.com/RuRANhmKS2C0eQg4v06Hp_U6TX4=/filters:background_color(white)/hotmart/product_pictures/d02e7aa4-bb70-4a77-af48-371531a5e7b2/Semtitulobackendcpebcpebht.jpg"
                         width="200px">
-                    <h4></h4>
-                    <p id="descricao"></p>
-                    <a href="#"><button class="btn bg-primary text-light mb-5">Entrar</button></a>
+                    <h4>Desenvolvedor de back-end em 30 dias</h4>
+                    <p id="descricao">Este livro aborda o processo de construção de aplicativos de software em larga escala do ponto de vista de um desenvolvedor de back-end. Mais do que um tutorial sobre ferramentas ou estruturas específicas, este livro descreve princípios e processos compartilhados entre as várias pilhas de tecnologia. Ferramentas e frameworks mudam com o tempo: são substituídos por pilhas mais novas; os padrões, no entanto, permanecem os mesmos. O</p>
+                    <a href="https://go.hotmart.com/K90535685L?dp=1"><button class="btn bg-primary text-light mb-5">Entrar</button></a>
                 </div>
-            </div>-->
+            </div>
         </div>
     </main>
     <!-- Rodapé -->
@@ -239,15 +252,15 @@ Os instrutores do curso fornecerão uma introdução completa ao desenvolvimento
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.1/font/bootstrap-icons.min.js"></script>
     <script>
-    function togglePopup() {
-        var popup = document.getElementById("popupContainer");
-        if (popup.style.right === "-400px") {
-            popup.style.right = "0";
-        } else {
-            popup.style.right = "-400px";
+        function togglePopup() {
+            var popup = document.getElementById("popupContainer");
+            if (popup.style.right === "-400px") {
+                popup.style.right = "0";
+            } else {
+                popup.style.right = "-400px";
+            }
         }
-    }
-</script>
+    </script>
 </body>
 
 </html>
