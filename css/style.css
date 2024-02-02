@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin-bottom: 70px;
+    /* Para compensar a altura do rodapé fixo */
+}
+
+header {
+    background-color: #007bff;
+    /* Cor primária do Bootstrap */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+main {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.feature {
+    margin-bottom: 30px;
+}
+
+.feature i {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.feature p {
+    font-size: 1.5em;
+    color: #343a40;
+}
+
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#descricao {
+    text-align: justify;
+    overflow: auto;
+    height: 120px;
+    color: black;
+}
+
+.item:hover {
+    /*(transform:scale(1.2);*/
+    border: 3px solid #64A;
+    /*padding-top:10px;*/
+    border-radius: 25px;
+    transition: 0.8s;
+}
+
+img {
+    border-radius: 25px;
+}
+
+.price {
+    top: -62px;
+    left: -100px;
+    padding: 15px;
+    font-size: 1px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.subtopo {
+    background: linear-gradient(to right, #64A, #41F);
+
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    /* Inicia o pop-up fora da tela */
+    width: 400px;
+    height: 70%;
+    background-color: #f8f9fa;
+    z-index: 9999;
+    transition: right 0.3s ease-in-out;
+    border: 5px solid black;
+    border-radius: 25px;
+}
+
+.popup-content {
+    padding: 20px;
+}
+
+.popup-btn {
+    position: absolute;
+    margin-top: 10px;
+    right: 10px
+        /*z-index: 999;  Menor z-index para ficar atrás do menu */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.menuItem:hover {
+    background-color: #007bff;
+    padding: 10px;
+    color: white;
+    transition: 1s ease;
+    border-radius: 20px;
+    box-shadow: 0 0 3em silver;
+}
+
+.top {
+    width: 100%;
+    background-color: red;
+    height: 40px;
+}
