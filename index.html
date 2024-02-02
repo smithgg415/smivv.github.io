@@ -138,11 +138,6 @@
             background-color: red;
             height: 40px;
         }
-        #nameInput:hover{
-            background-color:black;
-            box-shadow:none;
-            transition:2s;
-        }
     </style>
 </head>
 
@@ -328,7 +323,7 @@
 
         var userName = document.getElementById('nameInput').value; // Obtém o nome inserido
 
-        document.getElementById('user-name').innerHTML = '<a href="#">' + userName + '</a>'; // Insere o nome na barra de navegação
+        document.getElementById('user-name').innerHTML = '<a href="#"> Seja Bem-Vindo, ' + userName + '</a>'; // Insere o nome na barra de navegação
         document.getElementById('form-container').style.display = 'none'; // Esconde o formulário após o envio
     });
     </script>
