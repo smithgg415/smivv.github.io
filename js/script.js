@@ -19,7 +19,7 @@ document.getElementById('user-name').innerHTML = '<a href="#" style="text-decora
 document.getElementById('form-container').style.display = 'none'; // Esconde o formulário após o envio
 }
 });
-window.addEventListener("beforeunload" , event=>{
+/*window.addEventListener("beforeunload" , event=>{
     event.preventDefault();
     event.returnValue = '';
-})
+})*/
