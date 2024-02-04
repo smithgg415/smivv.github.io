@@ -23,7 +23,7 @@ document.getElementById('nameForm').addEventListener('submit', function (event) 
     event.preventDefault();
     event.returnValue = '';
 })*/
-import 'css/style.css'
+import './style.css'
 const scrollers = document.querySelectorAll('.scroller');
 
 function addAnimation() {
