@@ -10,8 +10,6 @@ header {
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
-    position:fixed;
-    top:0px;
 }
 
 header h1 {
@@ -43,7 +41,7 @@ main {
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
