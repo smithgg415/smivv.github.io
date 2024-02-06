@@ -2,20 +2,13 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
     margin-bottom: 70px;
-    /* Para compensar a altura do rodapé fixo */
 }
-
-header {
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
+header{
+    width: 100%;
+    background-image: url('logo.png');
+    background-size: cover;
+    background-position: center;
 }
-
-header h1 {
-    font-size: 3em;
-}
-
 main {
     padding: 50px 0;
     text-align: center;
@@ -54,7 +47,6 @@ main {
 }
 
 .item:hover {
-    /*(transform:scale(1.2);*/
     border: 3px solid #64A;
     /*padding-top:10px;*/
     border-radius: 25px;
@@ -83,7 +75,6 @@ img {
     position: fixed;
     top: 0;
     right: -400px;
-    /* Inicia o pop-up fora da tela */
     width: 400px;
     height: 70%;
     background-color: #f8f9fa;
