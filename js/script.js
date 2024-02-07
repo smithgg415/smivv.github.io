@@ -7,19 +7,15 @@ function togglePopup() {
     }
 }
 document.getElementById('nameForm').addEventListener('submit', function (event) {
-    event.preventDefault(); // Impede o envio do formulário
+    event.preventDefault();
 
-    var userName = document.getElementById('nameInput').value; // Obtém o nome inserido
+    var userName = document.getElementById('nameInput').value;
     if (userName === "") {
         document.getElementById('user-name').innerHTML = '<a href="#" style="text-decoration:none;color:black;"> Seja Bem-Vindo!</a>';
         document.getElementById('form-container').style.display = 'none';
     }
     else {
         document.getElementById('user-name').innerHTML = '<a href="#" style="text-decoration:none;color:black;"> Seja Bem-Vindo, ' + userName + '!</a>'; // Insere o nome na barra de navegação
-        document.getElementById('form-container').style.display = 'none'; // Esconde o formulário após o envio
+        document.getElementById('form-container').style.display = 'none';
     }
 });
-/*window.addEventListener("beforeunload" , event=>{
-    event.preventDefault();
-    event.returnValue = '';
-})*/
