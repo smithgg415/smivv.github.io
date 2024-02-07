@@ -11,11 +11,11 @@ document.getElementById('nameForm').addEventListener('submit', function (event) 
 
     var userName = document.getElementById('nameInput').value;
     if (userName === "") {
-        document.getElementById('user-name').innerHTML = '<a href="#" style="text-decoration:none;color:black;"> Seja Bem-Vindo!</a>';
-        document.getElementById('form-container').style.display = 'none';
+        document.getElementById('user-name').innerHTML = '<p style="text-decoration:none;color:black;"> Seja Bem-Vindo!</p>';
+        document.getElementById('nameForm').style.display = 'none';
     }
     else {
-        document.getElementById('user-name').innerHTML = '<a href="#" style="text-decoration:none;color:black;"> Seja Bem-Vindo, ' + userName + '!</a>'; // Insere o nome na barra de navegação
-        document.getElementById('form-container').style.display = 'none';
+        document.getElementById('user-name').innerHTML = '<p style="text-decoration:none;color:black;"> Seja Bem-Vindo, ' + userName + '!</p>';
+        document.getElementById('nameForm').style.display = 'none';
     }
 });

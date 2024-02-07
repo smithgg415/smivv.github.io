@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    /*font-family: Arial, sans-serif;*/
     background-color: #f8f9fa;
     margin-bottom: 70px;
 }
@@ -46,6 +46,7 @@ main {
     /*padding-top:10px;*/
     border-radius: 25px;
     transition: 0.8s;
+    margin: 5px;
 }
 
 img {
@@ -61,10 +62,10 @@ img {
     position: relative;
 }
 
-.subtopo {
+/*.subtopo {
     background: linear-gradient(to right, #64A, #41F);
 
-}
+}*/
 
 .popup-container {
     position: fixed;
@@ -145,15 +146,13 @@ iframe {
 
 .carousel {
     display: flex;
-    animation: carouselScroll 25s linear infinite;
+    animation: carouselScroll 20s linear infinite;
    
 }
 
 .carousel img {
     width: 200px;
-    /* Largura fixa para cada imagem */
     margin-right: 10px;
-    /* Espaçamento entre as imagens */
 }
 
 @keyframes carouselScroll {
