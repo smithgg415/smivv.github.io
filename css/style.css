@@ -1,6 +1,6 @@
 body {
     /*font-family: Arial, sans-serif;*/
-    background-color: #fff;
+    background-color: #4c00ff;
     margin-bottom: 70px;
 
 }
@@ -17,7 +17,7 @@ main {
 .feature i {
     font-size: 4em;
     margin-bottom: 20px;
-    color: blue;
+    color: orange;
 }
 
 .feature p {
